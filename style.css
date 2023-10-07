@@ -1,0 +1,263 @@
+:root{
+    --main-color: #0db1fd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+section{
+    padding: 30px 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgba(38, 44, 124, 0.733);
+    font-size: 40px;
+    margin: 0;
+}
+
+.main-nav ul{
+    list-style: none;
+}
+
+.main-nav{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 30px 5%;
+    font-size: 13px;
+    background: whitesmoke;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul li{
+    margin-right: 35px;
+}
+.main-nav ul li .active{
+    color: var(--main-color);
+}
+.main-nav ul li a{
+    font-size: 15px;
+    color: #222;
+}
+.active a{
+    color: var(--main-color);
+}
+
+li:not(:last-child) a:hover,
+li:not(:last-child) a:focus{
+    color: var(--main-color);
+}
+
+.main-nav .logo{
+    font-weight: bolder;
+    color: #222;
+    margin-right: 15px;
+    font-size: 2.5rem;
+} 
+
+.btn a{
+    background: var(--main-color);
+    border: 1px solid #f5dca8;
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.main-nav .logo span{
+    color: var(--main-color);
+}
+
+
+.menu-btn{
+    top: 20px;
+    right: 30px;
+    display: none;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #f3f3f3;
+}
+.home .content{
+    color: #222;
+    margin-bottom: 200px;
+}
+.home .content h3{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.home .content p{
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 1.0;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.home .content button{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    background: var(--main-color);
+    border: 1px dotted ;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.home-cards{
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px; */
+    display: flex;
+    flex-direction:row;  
+}
+
+.home-cards img{
+    width: 50%;
+    margin-bottom: 20px;
+    height: 50%;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.home-cards h3{
+    margin-bottom: 5px;
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    flex: auto;
+    border: 1px solid #8f8f8f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:990px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    
+    section{
+        padding: 2rem;
+    }
+    #button{
+        margin: 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .menu-btn{
+        display: block; 
+    }
+
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+
+    .main-nav a{
+        margin-left: 45%;
+    }
+
+    .main-nav{
+        padding: 1.5rem 2rem;
+        color: var(--main-color);
+    }
+
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid #ccc;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: tranform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .home-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .xbox .content p{
+        display: none;
+    }
+
+    .xbox .content h2{
+        margin-bottom: 20px;
+    }
+
+    .carbon .content{
+        width: 85%;
+    }
+
+    .links .links-inner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

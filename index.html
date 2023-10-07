@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Workhu</title>
+</head>
+<body>
+
+    <!---- Navbar start ---->
+    <nav class="main-nav">
+
+        <a href="#" class="logo">Work<span>hu</span></a>
+
+        <ul class="main-menu">
+            <li ><a class="active" href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#career">Career</a></li>
+            <li class="btn"><a href="#contact">Contact</a></li>
+        </ul> 
+        
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+    </nav>
+    <!---- Navbar end ---->
+
+
+
+    <!---- home start ---->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Your customized Token<br> For Globally Compliant<br> Disribution Events</h3>
+            <p>10-12 December,Downtown Conference Center See how Katie Sowers,<br> Asst. Coach for the 49ers,.</p>
+            <button type="button">About The Event</button>
+        </div>
+    </section>
+    <!---- home end ---->
+
+
+    <!---- cards start ---->
+
+    <h2 class="heading">What Services, We Give You!</h2>
+
+
+    <section class="home-cards">
+
+         <div class="card">
+            <img src="img/card.gif" alt="">
+            <h3>New Surface<br> Laptop</h3>
+            <p>
+                See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7
+                to put her plans into play.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/card2.gif" alt="">
+            <h3>New Surface<br> Laptop</h3>
+            <p>
+                Express yourself powerfully with a thin, light, and elegant design,
+                faster performance, and up to 11.5 hours battery life.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/card3.gif" alt="">
+            <h3>New Surface<br> Laptop</h3>
+            <p>
+                Buy an Xbox One X console and double your fun with a free select
+                extra controller. Starting at $349.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/card4.gif" alt="">
+            <h3>The new Microsoft Edge</h3>
+            <p>
+                Expect more. World class performance, with more privacy, more
+                productivity, and more value.
+            </p>
+        </div> 
+    </section>
+    <!---- cards end ---->
+
+
+
+
+    <script>
+        document.querySelector('.menu-btn')
+        
+        .addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    
+        $('.slide').hislide();
+    </script>
+</body>
+</html>
